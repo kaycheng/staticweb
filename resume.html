@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>My Resume</title>
 
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/font-awesome.min.css">
 </head>
@@ -18,11 +19,11 @@
           </a>
         </div>
         <ul class="nav">
-          <li><a href="">Home</a></li>
-          <li><a href="">About</a></li>
-          <li><a href="">Service</a></li>
-          <li><a href="">Profolio</a></li>
-          <li><a href="">Contact</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#service">Service</a></li>
+          <li><a href="#profolio">Profolio</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </div>
@@ -30,7 +31,7 @@
   </header>
 
   <!-- Homepage Background Image -->
-  <section class="home-bg">
+  <section class="home-bg" id="home">
     <div class="overlay"></div>
     <div class="container-table">
       <div class="container-table-cell">
@@ -48,7 +49,7 @@
   </section>
 
   <!-- About Me -->
-  <section class="about-me clearfix">
+  <section class="about-me clearfix" id="about">
     <div class="container">
       <h2>About Me</h2>
 
@@ -84,7 +85,7 @@
   </section>
   
   <!-- My Service -->
-  <section class="my-service clearfix">
+  <section class="my-service clearfix" id="service">
     <div class="container">
       <h2>What I Offer</h2>
 
@@ -169,7 +170,7 @@
   </section>
 
   <!-- Works -->
-  <section class="works">
+  <section class="works" id="profolio">
     <div class="container">
       <h2>latest work</h2>
 
@@ -212,6 +213,52 @@
       </div>
     </div>
   </section>
+
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <h2>get in touch</h2>
+
+      <div class="contact-form">
+        <form action="">
+          <div class="form-input">
+            <input type="text" name="name" class="form-style" placeholder="Input your name" required>
+          </div>
+          <div class="form-input">
+            <input type="email" name="email" class="form-style" placeholder="Enter your email" required>
+          </div>
+          <div class="form-input">
+            <textarea name="textarea" id="message" cols="30" rows="10" placeholder="write message" required></textarea>
+          </div>
+
+          <div class="form-submit">
+            <input type="submit" name="submit" value="submit">
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <div class="container">
+      <div class="footer-content">
+        <p>&copy; 2018 Kay Cheng | All Rights Reserved.</p>
+
+        <div class="footer-social-icon">
+          <ul>
+            <li>
+              <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+              <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a>
+              <a href=""><i class="fa fa-github" aria-hidden="true"></i></a>
+              <a href=""><i class="fa fa-skype" aria-hidden="true"></i></a>
+              <a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
    
 </body>
 </html>
